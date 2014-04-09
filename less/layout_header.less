@@ -1,0 +1,46 @@
+#header {
+        height: 380px;
+      
+        .social, .user {
+            float: right;
+            margin-left: 15px;
+            a {
+                display: block;
+                padding: 15px 30px;
+                color: @color-foreground;  
+                .font-major-link(.9em);
+                .no-decoration();
+            }
+        }
+        
+        .social {
+            ul { margin-bottom: 0; }
+            li { margin: 0; padding: 0 }
+            a { 
+                background: @green-darker; 
+                &.fb {
+                    .border-radius(0, 0, @default-radius, 0);
+                }
+                &.twitter {
+                    .border-radius(0, @default-radius, 0, 0);
+                }
+                &:hover {
+                    background: @green-dark;
+                }
+            }
+        }
+        
+        .user {
+            a { 
+                background: @red; 
+                .border-radius(0, @default-radius, @default-radius, 0);
+                &:hover {
+                    background: @red-light;
+                }
+            }            
+        }
+        
+        .navbar-default {
+            background: none;
+        }
+    }

@@ -3,7 +3,7 @@ SetEnv MAGIC_QUOTES 0
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /regenere/
+    RewriteBase /
 
     RewriteRule ^$ index.php [QSA,L]
     RewriteRule ^(.*).html$ index.php?page=$1 [QSA]

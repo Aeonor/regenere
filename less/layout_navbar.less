@@ -1,0 +1,19 @@
+#navbar {
+    clear: both;
+
+    background: @green-dark;
+    .border-radius(@default-radius, 0, 0, @default-radius);
+
+    li { 
+        width: 14%; border: 1px solid black;
+        height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+    }
+    a {
+        display: inline-block;
+        .font-major-link();
+        color: @color-foreground;
+        line-height: 1em;
+    }
+}

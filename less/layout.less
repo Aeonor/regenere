@@ -1,0 +1,16 @@
+html, body { height: 100%; }
+body {
+    min-height: 100%; 
+    background: @color-background;
+}
+
+#wrapper {
+    .gradient(@color-background, @color-background, @color-top-background);
+    .image {
+        background: url(../img/header.png) top center no-repeat;
+    }
+}
+
+
+@import 'layout_header';
+@import 'layout_navbar';
