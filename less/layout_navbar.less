@@ -1,19 +1,41 @@
 #navbar {
-    clear: both;
+  clear: both;
 
-    background: @green-dark;
-    .border-radius(@default-radius, 0, 0, @default-radius);
-
-    li { 
-        width: 14%; border: 1px solid black;
-        height: 50px;
-        line-height: 50px;
-        vertical-align: middle;
+  background: @green-dark;
+  .border-radius(@default-radius, 0, 0, @default-radius);
+  overflow: hidden;
+  ul { margin: 0 -5px; }
+  li { 
+    width: 14%;
+    .vertical-middle(55px);
+    text-align: center;
+    &:nth-child(1) { width: 15%; } // vidéos & articles
+    &:nth-child(2) { width: 10%; } // livre d'or
+    &:nth-child(3) { width: 18%; } // outils régénération
+    &:nth-child(4) { width: 10%; } // boutique
+    &:nth-child(5) { width: 17%; } // stages & conférences
+    &:nth-child(6) { width: 18%; } // questions fréquentes
+    &:nth-child(7) { width: 12%; } // l'association
+  }
+  a {
+    display: block;
+    position: relative;
+    .font-major-link(.9em);
+    color: @color-foreground;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1em;
     }
-    a {
-        display: inline-block;
-        .font-major-link();
-        color: @color-foreground;
-        line-height: 1em;
+    &:hover {
+      background: @green-darker;
     }
+    i {
+      .arrow(top, lighten(@green, 4%), 10px, 8px);
+      position: absolute; 
+      bottom: 0;
+      left: 50%;
+      margin-left: -10px;
+    }
+  }
 }

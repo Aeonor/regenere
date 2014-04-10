@@ -1,36 +1,47 @@
 // FONTS
 .font-lato() {
-    font-family: 'Lato', arial, sans-serif;
-    font-weight: 300;
+  font-family: 'Cabin', arial, sans-serif;
+  font-weight: 500;
 }
 
 .font-opensans() {
-    font-family: 'Open-sans', arial, sans-serif;
-    font-weight: 300;
+  font-family: 'Open-sans', arial, sans-serif;
+  font-weight: 300;
 }
 
 .font-titles() {
-    .font-lato();
+  .font-lato();
 }
 
 .font-work() {
-    .font-opensans();
+  .font-opensans();
 }
 
 
 .font-major-link(@size:1em) {
-    .font-titles();
-    .uppercase();
-    font-weight: 600;
-    font-size: @size;
+  .font-titles();
+  .uppercase();
+  font-size: @size;
 }
 
 .uppercase() {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .no-decoration() {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-// 
+// ALIGN
+.vertical-middle(@size) {
+  height: @size;
+  line-height: @size;
+  vertical-align: middle; 
+}
+
+// ARROWS
+.arrow(top, @color: white, @width: 10px, @height: 10px) {
+    display: inline-block;
+    border: @width solid transparent;
+    border-bottom: @height solid @color;
+}
