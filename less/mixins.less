@@ -1,42 +1,42 @@
 // FONTS
-.font-lato() {
-  font-family: 'Cabin', arial, sans-serif;
-  font-weight: 500;
+.font-cabin() {
+    font-family: 'Cabin', arial, sans-serif;
+    font-weight: 500;
 }
 
 .font-opensans() {
-  font-family: 'Open-sans', arial, sans-serif;
-  font-weight: 300;
+    font-family: 'Open sans', arial, sans-serif;
+    font-weight: 300;
 }
 
 .font-titles() {
-  .font-lato();
+    .font-cabin();
 }
 
 .font-work() {
-  .font-opensans();
+    .font-opensans();
 }
 
 
 .font-major-link(@size:1em) {
-  .font-titles();
-  .uppercase();
-  font-size: @size;
+    .font-titles();
+    .uppercase();
+    font-size: @size;
 }
 
 .uppercase() {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .no-decoration() {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 // ALIGN
 .vertical-middle(@size) {
-  height: @size;
-  line-height: @size;
-  vertical-align: middle; 
+    height: @size;
+    line-height: @size;
+    vertical-align: middle; 
 }
 
 // ARROWS
@@ -44,4 +44,12 @@
     display: inline-block;
     border: @width solid transparent;
     border-bottom: @height solid @color;
+}
+
+// FORMS
+.placeholder(@color) {
+    ::-webkit-input-placeholder { color: @color; font-style: oblique; }
+    ::-moz-placeholder { color: @color; font-style: oblique; } /* firefox 19+ */
+    :-ms-input-placeholder { color: @color; font-style: oblique; } /* ie */
+    input:-moz-placeholder { color: @color; font-style: oblique; }
 }

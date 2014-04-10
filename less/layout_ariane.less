@@ -1,16 +1,58 @@
 .ariane {
-  
-  &:after {
-    content: " ";
-    display: block;
-    margin: 0 15px;
-    border-bottom: 1px solid @green-desaturate;
-  }
-  
-  ul { margin-bottom: 0; }
-  a { 
-    .font-titles();
-    font-weight: 400;
-    color: @green-darker-than-dark;
-  }
+    margin-bottom: 30px;
+    nav {
+        &:after {
+            content: " ";
+            display: block;
+            border-bottom: 1px solid @green-desaturate;
+        }
+    }
+
+    ul { margin-bottom: 0; }
+    li { 
+        width: 12%;
+        text-align: center;
+        &:nth-child(1) { width: 10%; } // toutes
+        &:nth-child(2) { width: 15%; } // incontournables
+        &:nth-child(3) { width: 12%; } // physiologie
+        &:nth-child(4) { width: 10%; } // pratiques
+        &:nth-child(5) { width: 13%; } // témoignages
+        &:nth-child(6) { width: 19%; } // au dela du physique
+        &:nth-child(7) { width: 8%; } // recettes
+        &:nth-child(8) { width: 9%; }  // divers
+    }
+
+    a { 
+        display: block;
+        padding: 10px 0;
+        .font-titles();
+        font-weight: 400;
+        font-weight: 600;
+        color: @green-darker-than-dark;
+        .no-decoration();
+        &:hover { 
+            color: @red;
+        }
+        &:active, &.selected { 
+            color: @red;
+            font-weight: 900;
+            position: relative; top: 1px;
+            padding: 9px 0 7px;
+            border-bottom: 3px solid @red;
+        }
+    }
+
+    form {
+        padding-top: 7px;
+        padding-bottom: 3px;
+        input, button { height: 30px; }
+        .glyphicon { top: 0; }
+        input[type=search] { 
+            font-size: .85em; 
+            background: @green-light;
+            border: 0; 
+            color: @green-darker; 
+            padding-left: 10px;
+        }
+    }
 }

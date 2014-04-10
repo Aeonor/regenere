@@ -1,14 +1,18 @@
 // COLORS
-@green: #8ed948;
+@green: lighten(desaturate(#8ed948, 7%), 5%);
     @green-light: lighten(@green, 15%);
+    @green-lighter: lighten(@green, 30);
+    @green-shadow: darken(@green, 8%);
     @green-dark: #449a1d;
     @green-darker: #115820;
     @green-darker-than-dark: darken(@green-darker, 15%);
     @green-desaturate: desaturate(@green, 30%);
+    @green-desaturate2: desaturate(@green-shadow, 15%);
 @red: #ca1f32;
     @red-light: lighten(@red, 15%);
 @white: #fff;
 @black: #000;
+@grey: lighten(@black, 20%);
 
 
 @color-background: @green;
