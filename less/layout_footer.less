@@ -1,0 +1,40 @@
+body > footer {
+  margin-top: 60px;
+  padding-bottom: 30px;
+  font-size: .9em;
+  
+  .partners {
+    margin-bottom: 30px;
+    height: 100px;
+     > div { height: 100%; }
+     ul {
+      height: 100%;
+      padding: 15px 0;
+      border-top: 3px solid @green-dark;
+      border-bottom: 3px solid @green-dark;
+      overflow: hidden;
+      a {
+        max-height: 100%;
+        text-decoration: none;
+        figure { overflow: hidden; }
+        img {
+          float: left;
+          max-height: 100%;
+          margin-right: 15px;
+        }
+        p { text-align: left; }
+      }
+    }
+  }
+  
+  .restrictions {
+    margin-bottom: 30px;
+    .h4 { margin: 0 0 5px; }
+    .learn-more { margin-left: 5px; }
+  }
+  
+  .copyright {
+    margin-bottom: 30px;
+    p { font-size: 1.1em; font-weight: 400; }
+  }
+}

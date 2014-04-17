@@ -24,43 +24,43 @@
 <div class="row">
     <div class="videolist col-xs-9">
         <ul class="list-unstyled row">
-            <li class="col-xs-12 col-sm-6">
+          <li class="col-xs-12 col-sm-6"><a href="#">
                 <figure>
-                    <img src="http://img.youtube.com/vi/iDbfaUtI00U/mqdefault.jpg" alt="video" class="img-responsive" />
+                  <div class="preview"><img src="http://img.youtube.com/vi/iDbfaUtI00U/hqdefault.jpg" alt="video" class="img-responsive" /></div>
                     <figcaption>
                         <h4>Le système éliminatif/lymphatique - le corps dans sa simplicité 7</h4>
                         <time>20 février 2014</time>
                         <p>retrouvez toutes ces vidéos sur le site http://vivrecru.org. n'hésitez pas à vous abonner et partager ces vidéos si elles vous inspirent ! TOUTES LES INFORMATIONS SONT SUR WWW.VIVRECRU.ORG. Plus de renseignements sur vivrecru.org</p>
                     </figcaption>
-                </figure>
+                </figure></a>
             </li>
-            <li class="col-xs-12 col-sm-6">
+            <li class="col-xs-12 col-sm-6"><a href="#">
                 <figure>
-                    <img src="http://img.youtube.com/vi/iDbfaUtI00U/mqdefault.jpg" alt="video" class="img-responsive" />
+                    <img src="http://img.youtube.com/vi/iDbfaUtI00U/hqdefault.jpg" alt="video" class="img-responsive" />
                     <figcaption>
                         <h4>Le système éliminatif/lymphatique - le corps dans sa simplicité 7</h4>
                         <time>20 février 2014</time>
                         <p>retrouvez toutes ces vidéos sur le site http://vivrecru.org. n'hésitez pas à vous abonner et partager ces vidéos si elles vous inspirent ! TOUTES LES INFORMATIONS SONT SUR WWW.VIVRECRU.ORG. Plus de renseignements sur vivrecru.org</p>
                     </figcaption>
-                </figure>
-            </li> <li class="col-xs-12 col-sm-6">
+                </figure></a>
+            </li> <li class="col-xs-12 col-sm-6"><a href="#">
                 <figure>
-                    <img src="http://img.youtube.com/vi/iDbfaUtI00U/mqdefault.jpg" alt="video" class="img-responsive" />
+                    <img src="http://img.youtube.com/vi/iDbfaUtI00U/hqdefault.jpg" alt="video" class="img-responsive" />
                     <figcaption>
                         <h4>Le système éliminatif/lymphatique - le corps dans sa simplicité 7</h4>
                         <time>20 février 2014</time>
                         <p>retrouvez toutes ces vidéos sur le site http://vivrecru.org. n'hésitez pas à vous abonner et partager ces vidéos si elles vous inspirent ! TOUTES LES INFORMATIONS SONT SUR WWW.VIVRECRU.ORG. Plus de renseignements sur vivrecru.org</p>
                     </figcaption>
-                </figure>
-            </li> <li class="col-xs-12 col-sm-6">
+                </figure></a>
+            </li> <li class="col-xs-12 col-sm-6"><a href="#">
                 <figure>
-                    <img src="http://img.youtube.com/vi/iDbfaUtI00U/mqdefault.jpg" alt="video" class="img-responsive" />
+                    <img src="http://img.youtube.com/vi/iDbfaUtI00U/hqdefault.jpg" alt="video" class="img-responsive" />
                     <figcaption>
                         <h4>Le système éliminatif/lymphatique - le corps dans sa simplicité 7</h4>
                         <time>20 février 2014</time>
                         <p>retrouvez toutes ces vidéos sur le site http://vivrecru.org. n'hésitez pas à vous abonner et partager ces vidéos si elles vous inspirent ! TOUTES LES INFORMATIONS SONT SUR WWW.VIVRECRU.ORG. Plus de renseignements sur vivrecru.org</p>
                     </figcaption>
-                </figure>
+                </figure></a>
             </li>
         </ul>
     </div>

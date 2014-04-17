@@ -1,0 +1,32 @@
+.font-opensans() {
+      font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+body {
+   .font-opensans();
+    color: @color-foreground;
+}
+
+h1, .h1 {
+    font-size: 2.9em;
+    font-weight: 300;
+    margin: 5px 0 20px;    
+    & + nav {
+       margin: -15px 0 30px;   
+       text-transform: lowercase;
+    }
+}
+
+h2, .h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+a {
+  color: @green;
+  &:hover {
+     color: @green-dark;     
+  }
+}

@@ -1,59 +1,88 @@
 .ariane {
-    background: @green-light;
-    margin: 0 0 30px 0;
-    .border-radius(0, @default-radius, @default-radius, 0);
-    overflow: hidden;
-    
-    nav {
-       padding: 0;
-    }
+  margin: 0 0 30px 0;
+  border-bottom: 3px solid @green-light;
 
-    ul { margin-bottom: 0; }
+  nav {
+    padding: 0;
+  }
+
+  ul { 
+    margin-bottom: 0; 
     li { 
-        width: 12%;
-        text-align: center;
-        &:nth-child(1) { width: 10%; } // toutes
-        &:nth-child(2) { width: 15%; } // incontournables
-        &:nth-child(3) { width: 12%; } // physiologie
-        &:nth-child(4) { width: 10%; } // pratiques
-        &:nth-child(5) { width: 13%; } // témoignages
-        &:nth-child(6) { width: 19%; } // au dela du physique
-        &:nth-child(7) { width: 8%; } // recettes
-        &:nth-child(8) { width: 9%; }  // divers
+      width: 12%;
+      text-align: center;
+      &:nth-child(1) { width: 10%; } // toutes
+      &:nth-child(2) { width: 15%; } // incontournables
+      &:nth-child(3) { width: 12%; } // physiologie
+      &:nth-child(4) { width: 10%; } // pratiques
+      &:nth-child(5) { width: 13%; } // témoignages
+      &:nth-child(6) { width: 19%; } // au dela du physique
+      &:nth-child(7) { width: 8%; } // recettes
+      &:nth-child(8) { width: 9%; }  // divers
     }
-
     a { 
-        display: block;
-        padding: 12px 0;
-        .font-titles();
-        font-weight: 400;
-        font-weight: 600;
-        color: @green-darker-than-dark;
-        .no-decoration();
-        &:hover { 
-            color: @red;
+      display: block;
+      padding: 12px 0 9px;
+      .font-titles();
+      font-weight: 400;
+      font-weight: 600;
+      color: @green-darker-than-dark;
+      .no-decoration();
+      &:hover { 
+        color: @red;
+      }
+      &:active, &.selected { 
+        position: relative;
+        color: @red;
+        font-weight: 900;
+        padding: 9px 0 6px;
+        &:after {
+          content: " ";
+          display: block;
+          width: 100%;
+          position: absolute;
+          left: 0; bottom: -6px;
+          border-bottom: 3px solid @red;
         }
-        &:active, &.selected { 
-            color: @red;
-            font-weight: 900;
-            padding: 11px 0 9px;
-            border-bottom: 3px solid @red;
-        }
+      }
     }
+  }
+  
+  .breadcrumb {
+    background: none;
+    margin: 0;
+    padding: 0 5px;
+    li {
+      &+li {
+        &:before {
+          color: @green-dark;
+        }
+      }
+      &.active {
+        color: @green-dark;
+      }
+    }
+    a {
+      display: inline-block;
+      padding: 12px 0 9px;   
+      color: @green-darker;
+    }
+  }
 
-    form {
-        padding: 0 0 0 20px;
-        .input-group { height: 100% }
-        input, button { }
-        .glyphicon {  }
-        input, button { 
-            height: 44px;
-            border: none;
-            .rounded(0);
-            &[type=search] {
-                background: @green-lighter;      
-                padding: 0 0 0 15px;
-            }
-        }
+  form {
+    padding: 0 0 0 20px;
+    .input-group { height: 100% }
+    input, button { }
+    .glyphicon {  }
+    input, button { 
+      height: 41px;
+      border: none;
+      .rounded(0);
+      &[type=search] {
+        font-size: .9em;
+        background: @green-light;      
+        padding: 0 0 0 15px;
+      }
     }
+  }
 }

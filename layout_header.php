@@ -9,7 +9,7 @@
 
       <nav class="social">
         <ul class="list-inline">
-          <li><a href="#" class="fb">Facebook</a></li><li><a href="#" class="twitter">Twitter</a></li>
+          <li><a href="#" class="fb"><i>Facebook</i></a></li><li><a href="#" class="twitter"><i>Twitter</i></a></li>
         </ul>
       </nav>
 
